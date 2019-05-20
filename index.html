@@ -14,7 +14,9 @@
 <body>
   <header>
     <a href="index.html"><img id="logo" src="images/logowhite.svg" alt="bassin 7 logo"></a>
-
+<h1 class="headline1">BASSIN 7</h1>
+<h2 class="headline2">Samlingsstedet i byen yeah
+</h2>
   </header>
 
   <button class="collapsible">INFO</button>
@@ -49,28 +51,40 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 
+<footer>
+<h2>ÅBNINGSTIDER</h2>
+  <h3>HAVNEBADET</h3>
+  <h4>Juni-September</h4>
+  <div class="timetable">
+    <p>man-søn:</p>
+    <p class="time">10:00-18:00</p>
+  </div>
+  <h4>September-Maj</h4>
+  <div class="timetable">
+    <p>man-fre:<br>lør-søn:</p>
+    <p class="time">lukket<br>08:00-12:00</p>
+  </div>
+  <h3>CAFÉER</h3>
+  <div class="timetable">
+    <p>man-ons:<br>tors-fre:<br>lør-søn:</p>
+    <p class="time">10:00-20:00<br>09:00-20:00<br>08:00-20:00</p>
+  </div>
+  <h2>KONTAKT</h2>
+  <p>Irma Pedersens Gade <br>
+8000 Aarhus C, Denmark</p>
+<a href="#"><img class="some" src="images/facebook.svg" alt="facebook logo"></a>
+<a href="#"><img class="some" src="images/instagram.svg" alt="facebook logo"></a>
 
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
+</footer>
 
 
 
 
-  </section>
+
+
+
+
   <script src="main.js"></script>
 </body>
 
