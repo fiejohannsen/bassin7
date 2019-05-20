@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,76 @@
 
   <title>Document</title>
 </head>
+
 <body>
-<header>
-aælasklædjasdjkas <br>
+  <header>
+    aælasklædjasdjkas <br>
 
-<div id="opacity">
-  tekstbox
-</div>
-</header>
+    <div id="opacity">
+      tekstbox
+    </div>
+  </header>
 
-<section id="collapsibles" class="sections">
-  <button class="collapsible">INFO</button>
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, .</p>
-  </div>
-  <button class="collapsible">ÅBNINGSTIDER</button>
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, .</p>
-  </div>
-  <button class="collapsible">HAVNEBADET</button>
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet .</p>
-  </div>
-  <button class="collapsible">AKTIVITETER</button>
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, .</p>
-  </div>
-  <button class="collapsible">SPISESTEDER</button>
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, .</p>
-  </div>
+  <section id="collapsibles" class="sections">
+    <button class="collapsible">INFO</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, .</p>
+    </div>
+    <button class="collapsible">ÅBNINGSTIDER</button>
+    <div class="content">
+      <div id="content1">
+        <h3>HAVNEBADET</h3>
+        <h4>Juni-September</h4>
+        <div class="timetable">
+          <p>man-søn:</p>
+          <p class="time">10:00-18:00</p>
+        </div>
+        <h4>September-Maj</h4>
+        <div class="timetable">
+          <p> man-fre: <br> lør-søn:</p>
+          <p class="time">lukket<br>08:00-12:00</p>
+        </div>
+        <h3>CAFÉER</h3>
+        <div class="timetable">
+          <p>man-ons: <br>tors-fre:<br>lør-søn:</p>
+          <p class="time">10:00-20:00<br>09:00-20:00<br>08:00-20:00</p>
+        </div>
+      </div>
+    </div>
+    <button class="collapsible">HAVNEBADET</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet .</p>
+    </div>
+    <button class="collapsible">AKTIVITETER</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, .</p>
+    </div>
+    <button class="collapsible">SPISESTEDER</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, .</p>
+    </div>
 
 
-  <script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
       }
-    });
-  }
-  </script>
+    </script>
 
 
-</section>
-<script src="main.js"></script>
+  </section>
+  <script src="main.js"></script>
 </body>
+
 </html>
