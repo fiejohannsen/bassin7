@@ -4,7 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "poppins", sans-serif;
+    font-family: "futura medium", sans-serif;
+
 }
 :root {
 
@@ -14,8 +15,11 @@
 --light-grey:#F5F4F4;
 --white:#FFFFFF;
 --brown:#aea495;
+}
 
-
+h1, h2, h3, {
+  font-family: "futura", sans-serif;
+  color: var(--dark-grey);
 }
 
 header {
@@ -37,6 +41,7 @@ header {
   color: var(--white);
   margin-left: 10px;
   margin-top: 20px;
+
 }
 .headline2 {
   font-size: 10px;
@@ -59,7 +64,7 @@ header {
   font-size: 15px;
   height: 12.5vh;
   border: 1px solid white;
-  font-weight: bold;
+  font-weight:bolder;
 }
 
 .active {
@@ -87,6 +92,7 @@ header {
   overflow: hidden;
   transition: max-height 0.5s ease-out;
   background-color: #ffffff;
+  color: var(--dark-grey);
 }
 
 .timetable {
@@ -103,15 +109,18 @@ width:100%;
 
 footer {
   text-align: center;
-  margin: 20px;
+  padding: 20px;
+  background-color: var(--dark-grey);
+  color: var(--white);
 }
 footer > h4 {
   text-align: left;
 }
-footer > h2, h3, h4 {
+footer > h3, h4 {
   padding: 8px 0px 8px 0px;
 }
 .some {
   width: 15%;
-  margin-top: 15px;
+  margin-top: 20px;
+  padding: 0 5px;
 }
