@@ -7,23 +7,20 @@
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <style>
-    body { margin:0; padding:0; width: 100%;}
-    #map { position:absolute; top:0; bottom:0; width:100%;}
-    #mapcontainer {width: 50%; height: 50%;}
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
   </style>
 </head>
 <body>
 
-<div id='mapcontainer'>
 <div id='map'></div>
-</div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmllam9oYW5uc2VuIiwiYSI6ImNqdGlibHByZjBkcmgzeXF3dWkxZXUzemMifQ.40eM6_SfhPuKRd7ax3sTFQ';
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/fiejohannsen/cjvywmktk0ruf1coxz9rpqjo7',
-  center: [10.226780, 56.163633],
-  zoom: 17.6
+  style: 'mapbox://styles/fiejohannsen/cjvz22mft0wol1co1etj48q7o',
+  center: [10.226663, 56.163835],
+  zoom: 17.2
 });
 </script>
 
