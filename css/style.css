@@ -187,8 +187,11 @@ display: flex;
 }
 
 /* STYLING AF "HAVNEBAD" OG "INFO" I COLLAPSIBLE */
+.info-heading1 {
+  display: none;
+}
 
-.info-heading {
+.info-heading2 {
   color: var(--dark-grey);
   padding: 7px 0px;
 }
