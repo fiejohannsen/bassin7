@@ -5,49 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Document</title>
 </head>
 <body>
 
-  <header>
-    <a href="index.html"><img id="logo" src="images/logowhite.svg" alt="bassin 7 logo"></a>
-    <h1 class="headline5">HAVNEBADET</h1>
-    <h2 class="headline6">Verdens største havnebad.
-    </h2>
+  <header id="undersideheader">
+    <div class="topnav">
+      <a href="index.html" class="active"> <img class="logogrey" src="images/logogrey.svg" alt="Bassin 7 logo grey"></a>
+      <div id="myLinks">
+        <a href="info.html">INFO</a>
+        <a href="havnebad.html">HAVNEBADET</a>
+        <a href="aktiviteter.html">AKTIVITETER</a>
+        <a href="spisesteder.html">SPISESTEDER</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
   </header>
 
-<article>
-<h3 class="facility-heading">BASSINER OG FACILITETER</h3>
-<p>Havnebadet består af et 50 meter bassin, et børnebassin med skrå bund, et bassin til juniorer og et springbassin. Derudover er der en sauna og plads til dem, der gerne vil nyde stemningen, solen og udsigten.</p>
+<article class="info-article">
+  <h2>HAVNEBAD</h2> <br>
+<p>Midt i Aarhus centrum finder du havnebadet. Havnebadet ligger ved Bassin 7 på Aarhus Ø, og er åbent og gratis for alle året rundt. Med plads til 650 badegæster, kan du roligt tage venner, kollegaer eller familien under armen til en dukkert i et af de fire bassiner. Som et af Aarhus’ største samlingspunkter, kan du sammen med Aarhusianerne nyde stemningen og udsigten fra havnebadet.</p>
+<br>
+<h4 class="info-heading">DE FIRE BASSINER</h4>
+<ul class="info-list">
+  <li>Børnebassin: En skrå bund og med en vanddybde på 30 cm.</li>
+  <li>Junior: Med en vanddybde på 90 cm.</li>
+  <li>Svømmebassin: 50 meter langt og med en vanddybde på 2,20 meter.</li>
+  <li>pringbassin: Med en vanddybde på 4 meter og en udspringsplatform.</li>
+</ul> <br>
+<h4 class="info-heading">ÅBNINGSTIDER FOR HAVNEBADET</h4>
 
-<h4 class="facility-h4">Der er følgende faciliteter:</h4>
-<p>
-  Særskilt dame- og herreomklædning med omklædningsskabe
-  Du skal bruge en hængelås for at låse dine ejendele ind i skabene. Skabene skal tømmes hver dag og du må derfor ikke lade ejendele overnatte i skabet til næste dag. Hvis der hænger en hængelås på et skab, når Havnebadet lukker, bliver låsen klippet over.<br><br>
-  Fire toiletter samt et handicaptoilet.<br><br>
-  To saunaer<br><br>
-  Fire bassiner:
-  Et 50 meter bassin med en vanddybde på 2,20 meter
-  Børnebassin med skrå bund og en vanddybde på 30 cm
-  Juniorbassin med en vanddybde på 90 cm
-  Et springbassin på 4 meters dybde med udspringsplatform.<br><br>
-  Udendørsbrusere og vandhaner til drikkevand.<br><br>
-  Både promenadedæk samt bassinområde er tilgængeligt for kørestolsbrugere.
-</p>
-<h4 class="facility-h4">Vinderbadning</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nostrum est ab illum, odio impedit aut dolor ipsum, id aperiam?</p>
-<h4>Retningslinjer i Havnebadet</h4>
-<p>
-  Færdsel på Havnebadet og badning sker på eget ansvar.<br><br>
-  Børn har kun adgang til Havnebadet ifølge en voksen.<br><br>
-  Bassinområdet må kun benyttes i åbningstiden.<br><br>
-  Badetøj er påkrævet.<br><br>
-  Vis hensyn til de andre badegæster og følg altid personalets anvisninger.<br><br>
-  Vi skal gøre opmærksom på, at anlægget er røgfrit og at øl og spiritus ikke må medbringes.<br><br>
-  Brug af grill eller åben ild er ikke tilladt.<br><br>
-  Hunde er ikke tilladt.<br><br>
-</p>
+<table>
+  <tr>
+    <th>Septemper - Maj</th>
+  </tr>
+  <tr>
+    <td>Springbassinet er åbent for vinterbadning lørdage og søndage i tidsrummet 08.00-12.00. I denne forbindelse vil sauna samt omklædnings- og toiletter være tilgængelige.</td>
+  </tr>
+  <tr>
+    <th>Juni - August</td>
+  </tr>
+  <tr>
+    <td>Alle bassiner er åbne mandag-søndag i tidsrummet 10.00-18.00. I denne forbindelse vil omklædningsrum, toiletter og udendørs brusere være tilgængelige.</td>
+</table>
+<p>Trygfondens livreddere er til stede fra 1.Juni-31.August
+</p> <br>
+
+<h4 class="info-heading">HAVNEBADETS FACILITETER</h4>
+<ul class="info-list">
+  <li>Separat dame- og herre omklædning med skabe til personlige ejendele. Medbring selv hængelås som bruges under besøget i Havnebadet - vær dog opmærksom på at skabene tømmes hver dag, så tag derfor dine ejendele med hjem efter dit besøg.
+</li>
+  <li>Fire toiletter samt et handicaptoilet</li>
+  <li>To saunaer</li>
+  <li>Udendørs brusere</li>
+  <li>Vandhaner til drikkevand</li>
+</ul> <br>
+<p>OBS. Havnebadet er tilgængeligt for kørestolsbrugere.
+</p> <br>
+<h4 class="info-heading">REGLEMENT</h4>
+<ul class="info-list">
+  <li>Færdsel på Havnebadet og badning sker på eget ansvar
+</li>
+  <li>Børn har kun adgang til Havnebadet ifølge en voksen
+</li>
+  <li>Bassinområdet må kun benyttes i åbningstiden
+</li>
+  <li>Badetøj er påkrævet
+</li>
+  <li>Vis hensyn til de andre badegæster og følg altid personalets anvisninger
+</li>
+  <li>Vi skal gøre opmærksom på, at anlægget er røgfrit og at øl og spiritus ikke må medbringes
+</li>
+  <li>Brug af grill eller åben ild er ikke tilladt
+</li>
+  <li>Hunde er ikke tilladt
+</li>
+</ul> <br>
+<h4 class="info-heading">GLEMTE SAGER</h4>
+<p>Hvis du har glemt noget da du var på besøg ved Havnebadet kan du afhente det i tidsrummet 09.00-12.00. Henvend dig til personalet på stedet.</p>
+
 
 </article>
 
@@ -83,6 +124,7 @@
 
 
 
+<script src="main.js"></script>
 
 
 
