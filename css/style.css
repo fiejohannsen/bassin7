@@ -290,6 +290,7 @@ ul {
 display:flex;
 list-style-type: none;
 overflow: hidden;
+text-align: center;
 }
 
 li a {
@@ -298,7 +299,31 @@ display: block;
   text-decoration: none;
   color: var(--white);
   font-weight: bold;
+  position: relative;
+  text-align: center;
 }
+
+ a:before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 5px;
+  bottom: 10px;
+  left:5px;
+  background-color: var(--turquoise);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: 0.3s ease-in-out 0s;
+  transition: 0.3s  ease-in-out 0s;
+}
+
+ a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 
 .nav-colored {
   background-color: var(--light-grey);
