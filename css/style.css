@@ -345,3 +345,15 @@ display: block;
   padding: 20px;
   float: left;
 }
+
+.collapsible {
+  display: none;
+}
+
+.webcontainer1 {
+  width: 100%;
+
+}
+
+
+}
