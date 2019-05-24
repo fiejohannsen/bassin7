@@ -307,7 +307,7 @@ display: block;
   content: "";
   position: absolute;
   width: 85%;
-  height: 5px;
+  height: 3px;
   bottom: 10px;
   left:5px;
   background-color: var(--turquoise);
