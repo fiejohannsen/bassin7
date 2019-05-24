@@ -28,10 +28,20 @@
   height: 90vh;
 }
 
-#logo {
+ul {
+  display: none;
+}
+
+#logo-white {
   width: 90px;
   padding: 20px;
+  display: block;
 }
+
+#logo-grey {
+display: none;
+}
+
 
 h1, h2, h3, h4 {
   color: var(--dark-grey);
@@ -41,7 +51,7 @@ h1, h2, h3, h4 {
 .headline1 {
   font-size: 45px;
   color: var(--white);
-  margin: 120px 0 0 50px;
+  padding: 120px 0 0 50px;
   -webkit-animation: fadein 3s;
   font-weight: bold;
 
@@ -249,4 +259,64 @@ to { opacity: 1; }
 @keyframes fadein2 {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* MEDIA QUERRIES FOR WEB + TABLET */
+@media screen and (min-width: 600px) {
+
+  #frontpageheader {
+  background-image: url(../images/background-web.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    top:0;
+  }
+
+#navbar-web {
+position: fixed;
+padding-top: 5px;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+top:0;
+align-items: center;
+
+}
+
+ul {
+display:flex;
+list-style-type: none;
+overflow: hidden;
+}
+
+li a {
+display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.nav-colored {
+  background-color: var(--light-grey);
+  transition: 0.5s;
+
+}
+.nav-colored li a {
+  color: var(--dark-grey);
+
+}
+
+.nav-colored #logo-white {
+  display: none;
+}
+
+.nav-colored #logo-grey {
+  display: block;
+  width: 90px;
+  padding: 20px;
+  float: left;
 }
