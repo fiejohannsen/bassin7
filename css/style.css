@@ -28,7 +28,7 @@
   height: 90vh;
 }
 
-ul {
+ul-nav {
   display: none;
 }
 
@@ -286,14 +286,14 @@ align-items: center;
 
 }
 
-ul {
+.ul-nav {
 display:flex;
 list-style-type: none;
 overflow: hidden;
 text-align: center;
 }
 
-li a {
+.li-nav a {
 display: block;
   padding: 20px;
   text-decoration: none;
@@ -330,7 +330,7 @@ display: block;
   transition: 0.5s;
 
 }
-.nav-colored li a {
+.nav-colored .li-nav a {
   color: var(--dark-grey);
 
 }
