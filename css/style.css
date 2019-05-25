@@ -345,3 +345,20 @@ display: block;
   padding: 20px;
   float: left;
 }
+
+
+/* STYLING AF WEB-FORSIDE */
+.collapsible {
+  display: none;
+}
+
+.webcontainer1 {
+  width: 100%;
+
+}
+.webcontainer1-img {
+  width: 40%;
+}
+
+
+}
