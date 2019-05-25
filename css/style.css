@@ -346,6 +346,8 @@ display: block;
   float: left;
 }
 
+
+/* STYLING AF WEB-FORSIDE */
 .collapsible {
   display: none;
 }
@@ -353,6 +355,9 @@ display: block;
 .webcontainer1 {
   width: 100%;
 
+}
+.webcontainer1-img {
+  width: 40%;
 }
 
 
