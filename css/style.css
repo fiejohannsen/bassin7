@@ -118,6 +118,7 @@ width:100%;
   flex-direction: row;
   justify-content: space-between;
   text-align: left;
+
 }
 
 .h3-timetable {
@@ -241,29 +242,30 @@ footer {
 footer > h4 {
   text-align: left;
 }
-.aabningstiderhavnebad {
+
+.havnebadfooter {
   padding: 0px 75px;
 }
-.aabningstidercafe {
+.cafefooter {
   padding: 0px 75px;
 
 }
 
-.aabningstiderhavnebad > h3 {
+.havnebadfooter > h3 {
   padding: 40px 0px 15px 0px;
   color: var(--white);
 }
 
-.aabningstiderhavnebad > h4 {
-  padding: 20px 0px 15px 0px;
+.havnebadfooter > h4 {
+  padding: 15px 0px 10px 0px;
   color: var(--white);
 }
-.aabningstidercafe > h3 {
+.cafefooter > h3 {
   padding: 40px 0px 15px 0px;
   color: var(--white);
 }
-.aabningstidercafe > h4 {
-  padding: 20px 0px 15px 0px;
+.cafefooter > h4 {
+  padding: 15px 0px 10px 0px;
   color: var(--white);
 }
 
@@ -285,6 +287,15 @@ footer > h4 {
 }
 
 
+/* STYLING AF FORSIDE (WEB + TABLET) */
+
+.promenade {
+  display: none;
+}
+.webcontainer1 {
+  display: none;
+}
+
 /* KEYFRAMES */
 
 @keyframes fadein {
@@ -297,18 +308,18 @@ to { opacity: 1; }
   to { opacity: 1; }
 }
 
-/* MEDIA QUERRIES FOR WEB + TABLET */
-@media screen and (min-width: 600px) {
 
+/* MEDIA QUERRIES FOR TABLET */
+@media screen and (min-width: 600px) {
   #frontpageheader {
-  background-image: url(../images/background-web.jpg);
+    background-image: url(../images/mob.png);
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    top:0;
+    height: 90vh;
   }
+
 
 #navbar-web {
 position: fixed;
@@ -383,42 +394,87 @@ display: block;
 }
 
 
-/* STYLING AF WEB-FORSIDE */
+
+/* STYLING AF TABLET-FORSIDE */
 .collapsible {
   display: none;
 }
 
 .webcontainer1 {
   width: 100%;
+  display: flex;
+align-items: center;
+padding: 20px;
+}
+
+.promenade {
+  display: block;
+  width: 60%;
+}
+.content-section1 {
+  width: 60%;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.aabningstiderhavnebad {
+width: 50%;
+padding: 10px;
+}
+.aabningstidercafe {
+  width: 50%;
+  padding: 10px;
 
 }
-.webcontainer1-img {
-  width: 40%;
+.webcontainer1 > .aabningstiderhavnebad {
+  width: 50%;
+  color: var(--dark-grey);
 }
+.webcontainer1 > .aabningstiderhavnebad > h3 {
+  color: var(--dark-grey);
+}
+.webcontainer1 > .aabningstiderhavnebad > h4 {
+  color: var(--dark-grey);
+}
+
+.webcontainer1 > .aabningstidercafe {
+  width: 50%;
+}
+.webcontainer1 > .aabningstidercafe > h3 {
+  color: var(--dark-grey);
+}
+
+/* STYLING AF FOOTER (TABLET) */
 
 footer {
   display: flex;
   flex-direction: row;
-padding: 20px 50px;
+  justify-content: space-between;
+padding: 20px 40px;
 
 }
 
-.aabningstiderhavnebad {
-  width: 33%;
+.havnebadfooter {
+  width: 25%;
   text-align: left;
+  padding: 0px;
+
 
 }
-.aabningstidercafe {
-  width: 33%;
+.cafefooter {
+  width: 25%;
   text-align: left;
-
+  padding: 0px;
 }
 
 .kontakt {
-  width: 33%;
+  width: 25%;
   text-align: left;
-  padding: 0px 75px;
-
+  padding: 0px;
 }
 
 .timetable {
@@ -448,4 +504,27 @@ padding: 20px 50px;
   margin-top: 10px;
 }
 
+}
+
+/* MEDIA QUERRIES FOR WEB */
+
+@media screen and (min-width: 900px) {
+
+  #frontpageheader {
+  background-image: url(../images/background-web.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    top:0;
+  }
+
+  footer {
+    padding: 20px 60px;
+    justify-content: space-evenly;
+  }
+  .timetable {
+    width: 70%;
+  }
 }
