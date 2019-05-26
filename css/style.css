@@ -286,8 +286,7 @@ footer > h4 {
   display: none;
 }
 
-
-/* STYLING AF FORSIDE (WEB + TABLET) */
+/* DISPLAY NONE PÅ MOBIL*/
 
 .promenade {
   display: none;
@@ -309,7 +308,6 @@ to { opacity: 1; }
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
 
 /* MEDIA QUERRIES FOR TABLET */
 @media screen and (min-width: 600px) {
@@ -397,8 +395,6 @@ display: block;
   padding: 20px;
   float: left;
 }
-
-
 
 /* STYLING AF TABLET-FORSIDE */
 .collapsible {
@@ -613,4 +609,10 @@ padding: 20px 40px;
   .timetable {
     width: 70%;
   }
+/* STYLING AF HAVNEBAD.HTML TIL WEB */
+
+}
+
+/* STYLING AF INFO.HTML TIL WEB */
+
 }
