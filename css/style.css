@@ -183,10 +183,57 @@ h1, h2, h3, h4 {
 }
 
 /* STYLING AF LINKS I "SPISESTEDER" I COLLAPSIBLE */
+
 .facebook-links {
-  width: 30px;
+  width: 50%;
+  margin: 20px auto;
+  background-color: var(--white);
+  border: 1px solid var(--turquoise);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+
+}
+.facebook-links:hover {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid var(--white);
+  background-color: var(--turquoise);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+.facebook-links > .facebook-letter-white {
+  display: none;
+}
+
+.facebook-links:hover > .facebook-letter-white {
+  display: block;
+}
+.facebook-links:hover > .facebook-letter-blue {
+  display: none;
+}
+.facebook-links > a {
+  text-decoration: none;
+  color: var(--turquoise);
   margin: 0 auto;
 }
+
+.facebook-links:hover > a {
+  color: var(--white);
+}
+
+.facebook-letter-blue {
+  width: 15%;
+  padding: 7px;
+}
+.facebook-letter-white {
+  width: 15%;
+  padding: 7px;
+}
+
 
 /* STYLING AF "HAVNEBAD" OG "INFO" I COLLAPSIBLE */
 .info-heading1 {
