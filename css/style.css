@@ -327,13 +327,13 @@ to { opacity: 1; }
 
 #navbar-web {
 position: fixed;
-padding-top: 5px;
 width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 top:0;
 align-items: center;
+height: 8vh;
 
 }
 
@@ -386,6 +386,9 @@ display: block;
   color: var(--dark-grey);
 
 }
+#logo-white {
+  padding: 25px;
+}
 
 .nav-colored #logo-white {
   display: none;
@@ -394,7 +397,7 @@ display: block;
 .nav-colored #logo-grey {
   display: block;
   width: 90px;
-  padding: 20px;
+  padding: 25px;
   float: left;
 }
 
@@ -466,71 +469,30 @@ padding: 10px;
 .webcontainer2 {
   width: 100%;
   display: flex;
+  flex-direction: column;
 align-items: center;
 padding: 20px;
 }
-
-.webcontainer2-img {
-  width: 50%;
-  z-index: 0;
-  right: 0;
-  float: right;
-
-}
-.content-section2 {
-  width: 60%;
-  height: 200px;
-  background-color: red;
-left: 0;
-z-index: 1;
-
-}
-
-
-.collapsibleweb {
-  background-color: #F5F4F4;
-  color: #4a4a4a;
-  cursor: pointer;
-  padding: 18px;
+.webcontainer2-h2 {
   width: 100%;
   text-align: center;
-  outline: none;
-  font-size: 15px;
-  height: 12.5vh;
-  border: 1px solid white;
-  font-weight:bolder;
 }
 
-.collapsibleweb:after {
-  content: '\002B';
-  color: #00BDB2;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+.webcontainer2-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
-.active {
-  background-color: #00BDB2;
-  color: white;
+.content-images {
+  height: 100%;
 }
 
-.active:after {
-  content: "\2212";
-  color: #FFFFFF;
-  z-index: 1;
+.webcontainer2-section {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding: 10px;
 }
-
-.contentweb {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-  background-color: #ffffff;
-  color: var(--dark-grey);
-}
-.contentweb h4 {
-  color: var(--dark-grey);
-}
-
 
 
 
