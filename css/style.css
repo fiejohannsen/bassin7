@@ -191,16 +191,11 @@ h1, h2, h3, h4 {
   border-radius: 20px;
   display: flex;
   align-items: center;
+  margin-top: auto;
 }
 
 .facebook-links:hover {
-  width: 50%;
-  margin: 20px auto;
-  border: 1px solid var(--white);
   background-color: var(--turquoise);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .facebook-links>.facebook-letter-white {
@@ -552,11 +547,14 @@ footer>h4 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: var(--light-grey);
   }
 
   .webcontainer2-h2 {
     width: 100%;
     text-align: center;
+    font-size: 30px;
+    padding: 30px;
   }
 
   .webcontainer2-content {
@@ -566,6 +564,7 @@ footer>h4 {
   }
 
   .content-images {
+    width: 100%;
     height: 100%;
   }
 
@@ -576,53 +575,71 @@ footer>h4 {
     padding: 10px;
   }
 
-  .heading {
+  /* STYLING AF SPISESTEDER PÅ FORSIDE WEB */
+  .webcontainer3 {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .webcontainer3-h2 {
+    width: 100%;
     text-align: center;
-    margin-top: 50px;
-    color: #323232;
-    padding: 50px 0;
+    font-size: 30px;
+    padding: 30px;
   }
 
-  .section-wrap {
-    height: 1400px;
-    background-color: var(--light-grey);
-  }
-
-  .flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  .content-images {
     width: 100%;
-    height: 50vh;
-    padding-top: 100px;
+    height: auto;
   }
 
-  .cards {
-    position: relative;
-    height: 100%;
+  .webcontainer3-section {
     width: 30%;
-  }
-
-  .cards>img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .flex-container2 {
+    box-shadow: 0 8px 6px -6px var(--dark-grey);
+    padding-bottom: 15px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 50vh;
-    padding-top: 100px;
-    margin-top: 120px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
   }
 
+  .flex-text3 {
+    width: 100%;
+    height: 70%;
+    padding: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .flex-text3>h3 {
+    padding: 15px 0px;
+    text-align: center;
+  }
+
+  .activities-text {
+    padding: 30px 0px 0px 0px;
+    line-height: 1.5em;
+  }
+
+  .facebook-letter-blue {
+    padding: 5px;
+  }
+
+  .facebook-letter-white {
+    padding: 5px;
+  }
+
+  /*
   .line {
     display: block;
     position: relative;
     width: 30px;
-    border: 1px solid green;
+    border: 1px solid var(--turquoise);
     margin: 0 auto;
     animation: 2s tryhard ease;
   }
@@ -636,21 +653,7 @@ footer>h4 {
       width: 30px;
     }
   }
-
-  .text {
-    text-align: center;
-    height: 170px;
-    box-shadow: 0 8px 6px -6px black;
-  }
-
-  .text h4 {
-    padding: 20px 0;
-  }
-
-  .text>p {
-    padding: 20px 30px;
-  }
-
+*/
   /* STYLING AF FOOTER (TABLET) */
   footer {
     display: flex;
@@ -744,6 +747,14 @@ footer>h4 {
     width: 100%;
     height: 100vh;
     top: 0;
+  }
+
+  .flex-text3 {
+    height: auto;
+  }
+
+  .activities-text {
+    padding-bottom: 25px;
   }
 
   footer {
