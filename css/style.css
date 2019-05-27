@@ -576,6 +576,81 @@ footer>h4 {
     padding: 10px;
   }
 
+  .heading {
+    text-align: center;
+    margin-top: 50px;
+    color: #323232;
+    padding: 50px 0;
+  }
+
+  .section-wrap {
+    height: 1400px;
+    background-color: var(--light-grey);
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50vh;
+    padding-top: 100px;
+  }
+
+  .cards {
+    position: relative;
+    height: 100%;
+    width: 30%;
+  }
+
+  .cards>img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flex-container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50vh;
+    padding-top: 100px;
+    margin-top: 120px;
+  }
+
+  .line {
+    display: block;
+    position: relative;
+    width: 30px;
+    border: 1px solid green;
+    margin: 0 auto;
+    animation: 2s tryhard ease;
+  }
+
+  @keyframes tryhard {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 30px;
+    }
+  }
+
+  .text {
+    text-align: center;
+    height: 170px;
+    box-shadow: 0 8px 6px -6px black;
+  }
+
+  .text h4 {
+    padding: 20px 0;
+  }
+
+  .text>p {
+    padding: 20px 30px;
+  }
+
   /* STYLING AF FOOTER (TABLET) */
   footer {
     display: flex;
