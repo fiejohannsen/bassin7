@@ -45,25 +45,32 @@ p {
   display: none;
 }
 
-h1, h2, h3, h4 {
-  color: var(--dark-grey);
-}
-
 .headline1 {
-  font-size: 45px;
+  font-size: 40px;
   color: var(--white);
   padding: 120px 0 0 50px;
   -webkit-animation: fadein 3s;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .headline2 {
-  font-size: 15px;
+  font-size: 20px;
   color: var(--white);
   font-style: italic;
   margin-left: 55px;
   font-weight: lighter;
   -webkit-animation: fadein2 6s;
+  margin-bottom: 10px;
+}
+
+.headline3 {
+  font-size: 12px;
+  color: var(--white);
+  margin-left: 55px;
+  font-weight: lighter;
+  -webkit-animation: fadein2 6s;
+  line-height: 1.5em;
 }
 
 /* COLLAPSIBLE MENU (MOBIL) */
@@ -188,6 +195,10 @@ h1, h2, h3, h4 {
 }
 
 /* STYLING AF LINKS I "SPISESTEDER" I COLLAPSIBLE */
+.activities-text1 {
+  margin-bottom: 10px;
+}
+
 .facebook-links {
   width: 50%;
   margin: 20px auto;
@@ -474,6 +485,19 @@ footer>h4 {
     float: left;
   }
 
+  .headline1 {
+    font-size: 55px;
+    padding: 250px 0 0 50px;
+  }
+
+  .headline2 {
+    font-size: 25px;
+  }
+
+  .headline3 {
+    font-size: 18px;
+  }
+
   /* STYLING AF TABLET-FORSIDE */
   .collapsible {
     display: none;
@@ -595,10 +619,6 @@ footer>h4 {
     flex-direction: row;
   }
 
-  .activities-text1 {
-    margin-bottom: 10px;
-  }
-
   .activities-links {
     width: 15%;
   }
@@ -609,8 +629,6 @@ footer>h4 {
   }
 
   .link-logos-white {
-    width: 15%;
-    padding: 5px;
     display: none;
   }
 
@@ -618,7 +636,7 @@ footer>h4 {
     display: none;
   }
 
-  /* STYLING AF SPISESTEDER PÅ FORSIDE WEB */
+  /* STYLING AF SPISESTEDER PÅ FORSIDE TABLET */
   .webcontainer3 {
     width: 70%;
     height: auto;
@@ -696,10 +714,12 @@ footer>h4 {
   }
 
   .facebook-letter-blue {
+    width: 20%;
     padding: 5px;
   }
 
   .facebook-letter-white {
+    width: 20%;
     padding: 5px;
   }
 
