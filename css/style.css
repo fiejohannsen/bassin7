@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "futura-pt", sans-serif;
+  color: var(--dark-grey);
 }
 
 @import url("https://use.typekit.net/pog6zkp.css");
@@ -137,8 +138,17 @@ p {
   margin-bottom: 20px;
 }
 
+.day-footer {
+  color: var(--white);
+}
+
 .time {
   text-align: right;
+}
+
+.time-footer {
+  text-align: right;
+  color: var(--white);
 }
 
 /* STYLING AF BILLEDER I "AKTIVITETER" OG "SPISESTEDER" I COLLAPSIBLE */
@@ -306,6 +316,10 @@ footer>h4 {
 
 .kontakt>h3 {
   padding: 40px 0px 15px 0px;
+  color: var(--white);
+}
+
+.kontaktfooter>p {
   color: var(--white);
 }
 
@@ -502,6 +516,7 @@ footer>h4 {
     text-align: center;
     font-size: 30px;
     padding: 30px;
+    color: var(--dark-grey);
   }
 
   .img-container1 {
@@ -760,29 +775,110 @@ footer>h4 {
     text-align: left;
   }
 
-  /* STYLING AF INFO.HTML */
+  /* STYLING AF INFO.HTML + HAVNEBAD.HTML */
   #subpageheader {
-    background-image: url(../images/mob.png);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
+  }
+
+  #navbar-sub-web {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    height: 8vh;
+    z-index: 10;
+    background-color: var(--light-grey);
+  }
+
+  #logo-grey-sub {
+    width: 90px;
+    padding: 25px;
+    display: block;
+  }
+
+  .ul-nav-sub {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .li-nav-sub>.navbar-link {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+  }
+
+  .navbar-link:before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    bottom: 10px;
+    left: 8px;
+    background-color: var(--turquoise);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: 0.3s ease-in-out 0s;
+    transition: 0.3s ease-in-out 0s;
+  }
+
+  .navbar-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .sub-section {
+    width: 90%;
+    margin: 80px auto 20px auto;
+    color: var(--dark-grey);
   }
 
   .info-article {
-    width: 70vw;
+    padding: 20px;
+    column-count: 2;
+  }
+
+  .h2-sub {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+  }
+
+  .info-heading-sub {
+    padding: 20px 0px 10px 0px;
+  }
+
+  table {
+    margin: 25px 0;
+  }
+
+  td, th {
+    padding: 25px 15px;
+  }
+
+  .article-image-img {
+    width: 100%;
+  }
+
+  #map-container {
+    width: 100%;
     margin: 0 auto;
-    background-color: var(--light-grey);
-    padding: 2%;
-    color: var(--dark-grey);
-    font-family: "futura medium", sans-serif;
+    bottom: 50px;
   }
 
   #infokort-img {
     width: 100%;
-    padding: 5%;
-    margin: 0 auto;
     animation-name: fademap;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -904,6 +1000,16 @@ footer>h4 {
     margin-bottom: 20px;
   }
 
+  /* STYLING AF INFO.HTML + HAVNEBAD.HTML WEB */
+  .sub-section {
+    width: 70%;
+  }
+
+  .h2-sub {
+    padding-top: 5px;
+    font-size: 45px;
+  }
+
   /* STYLING AF SPISESTEDER WEB */
   .activities-text2 {
     padding-bottom: 25px;
@@ -934,15 +1040,9 @@ footer>h4 {
     padding: 0px 70px;
   }
 
-  .kontaktfooter {
-    width: 25%;
-  }
-
   .timetable {
     line-height: 1.2em;
   }
-
-  /* STYLING AF HAVNEBAD.HTML TIL WEB */
 }
 
 /* STYLING AF INFO.HTML TIL  */

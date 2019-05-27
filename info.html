@@ -1,93 +1,118 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/pog6zkp.css">
   <title>Document</title>
 </head>
+
 <body>
   <header id="subpageheader">
-    <nav id="navbar-web">
-      <div class=logo-container>
-        <a href="index.html"><img id="logo-white" src="images/logowhite.svg" alt="bassin 7 logo"></a>
-        <a href="index.html"><img id="logo-grey" src="images/logogrey.svg" alt="bassin 7 logo"></a>
+    <nav id="navbar-sub-web">
+      <div class=logo-sub-container>
+        <a href="index.html"><img id="logo-grey-sub" src="images/logogrey.svg" alt="bassin 7 logo"></a>
       </div>
-      <ul class="ul-nav">
-        <li class="li-nav"><a href="info.html">INFO</a></li>
-        <li class="li-nav"><a href="havnebad.html">HAVNEBAD</a></li>
-        <li class="li-nav"><a href="aktiviteter.html">AKTIVITETER</a></li>
-        <li class="li-nav"><a href="spisesteder.html">SPISESTEDER</a></li>
+      <ul class="ul-nav-sub">
+        <li class="li-nav-sub"><a class="navbar-link" href="info.html">INFO</a></li>
+        <li class="li-nav-sub"><a class="navbar-link" href="havnebad.html">HAVNEBAD</a></li>
+        <li class="li-nav-sub"><a class="navbar-link" href="#webcontainer2">AKTIVITETER</a></li>
+        <li class="li-nav-sub"><a class="navbar-link" href="#webcontaine3">SPISESTEDER</a></li>
       </ul>
-    </nav> 
+    </nav>
   </header>
 
+  <section class="sub-section">
+    <h2 class="h2-sub">INFO</h2>
+    <article class="info-article">
+      <p>Aarhus’ nye samlingspunkt, Bassin 7, er et kulturelt og kulinarisk kvarter, som ligger på Aarhus Ø. Bassin 7 er området omkring havnebadet, hvor aarhusianere helt gratis kan tage en frisk dukkert.
+      </p> <br>
+      <p>
+        Det er også stedet du søger hen, hvis du vil gå en tur, med god udsigt langs promenaden. Hyggelige boder som Street Coffee, Hansens Is og Metins Grill, serverer lækkerier til de sultne og tørstige. Promenadens boder er også åbne uden for
+        havnebadets åbningstider.
+      </p> <br>
+      <p>
+        Bassin 7 er samlingssted for forskellige aktiviteter, som Havnebadet, surfing i kabelparken ved Aarhus Watersport Complex, crossfit ved Aarhus Crossfit og volleyballbaner.
+      </p> <br>
+      <p>
+        Der er plads til hele familien, og børnene kan lege i havnebadet, hvor livreddere vil være til stede. Der er desuden sandkasser til de mindste.
+      </p> <br>
 
-  <article class="info-article">
-    <h2>PRAKTISK INFORMATION</h2> <br>
-    <p>Aarhus’ nye samlingspunkt, Bassin 7, er et kulturelt og kulinarisk kvarter, som ligger på Aarhus Ø. Bassin 7 er området omkring havnebadet, hvor aarhusianere helt gratis kan tage en frisk dukkert.
-  </p> <br>
-  <p>
-    Det er også stedet du søger hen, hvis du vil gå en tur, med god udsigt langs promenaden. Hyggelige boder som Street Coffee, Hansens Is og Metins Grill, serverer lækkerier til de sultne og tørstige. Promenadens boder er også åbne uden for havnebadets åbningstider.
-  </p> <br>
-  <p>
-    Bassin 7 er samlingssted for forskellige aktiviteter, som Havnebadet, surfing i kabelparken ved Aarhus Watersport Complex, crossfit ved Aarhus Crossfit og volleyballbaner.
-  </p> <br>
-  <p>
-    Der er plads til hele familien, og børnene kan lege i havnebadet, hvor livreddere vil være til stede. Der er desuden sandkasser til de mindste.
-  </p>  <br>
-  <h4 class="info-heading">FREMTIDSPLANER FOR BASSIN 7</h4>
-  <p>I 2021 påbegyndes det sidste skridt for det færdige Bassin 7. Havnebassinet og promenaden skal forbindes med de bagvedliggende bygninger, som den nye boligbygning, AArhus, nye bådhuse, et teater, et hotel og en konferencebygning. </p>
-<img id="infokort-img"  src="images/kort.svg" alt="kort over bassin 7">
-</article>
-
-<footer>
-  <div class="aabningstiderhavnebad havnebadfooter">
-    <h3>HAVNEBADET</h3>
-    <h4>Juni-September</h4>
-    <div class="timetable">
-      <p class="day">man-søn:</p>
-      <p class="time">10:00-18:00</p>
+      <h4 class="info-heading-sub">FREMTIDSPLANER FOR BASSIN 7</h4>
+      <p>I 2021 påbegyndes det sidste skridt for det færdige Bassin 7. Havnebassinet og promenaden skal forbindes med de bagvedliggende bygninger, som den nye boligbygning, AArhus, nye bådhuse, et teater, et hotel og en konferencebygning. </p>
+    </article>
+    <div id="map-container">
+      <img id="infokort-img" src="images/kort.svg" alt="kort over bassin 7">
     </div>
-    <h4>September-Maj</h4>
-    <div class="timetable">
-      <p class="day">man-fre:<br>lør-søn:</p>
-      <p class="time">lukket<br>08:00-12:00</p>
+  </section>
+  <footer>
+    <div class="aabningstiderhavnebad havnebadfooter">
+      <h3>HAVNEBADET</h3>
+      <h4>Juni - september</h4>
+      <div class="timetable">
+        <p class="day-footer">man - søn:</p>
+        <p class="time-footer">10:00-18:00</p>
+      </div>
+      <h4>Oktober - maj</h4>
+      <div class="timetable">
+        <p class="day-footer">man - fre:<br>lør - søn:</p>
+        <p class="time-footer">lukket<br>08:00-12:00</p>
+      </div>
     </div>
-  </div>
 
-  <div class="aabningstidercafe cafefooter">
+    <div class="aabningstidercafe cafefooter">
 
-    <h3>CAFÉER</h3>
-    <div class="timetable">
-      <p class="day">man-ons:<br>tors-fre:<br>lør-søn:</p>
-      <p class="time">10:00-20:00<br>09:00-20:00<br>08:00-20:00</p>
+      <h3>CAFÉER</h3>
+      <h4>Maj - oktober</h4>
+      <div class="timetable">
+        <p class="day-footer">man - søn:</p>
+        <p class="time-footer">09:00-20:00</p>
+      </div>
+      <h4>November - april</h4>
+      <div class="timetable">
+        <p class="day-footer">man - søn:</p>
+        <p class="time-footer">lukket</p>
+      </div>
     </div>
-    <div class="somecontainer1">
-      <h3>FØLG BASSIN 7</h3>
-      <a href="#"><img class="some" src="images/facebook.svg" alt="facebook logo"></a>
-      <a href="#"><img class="some" src="images/instagram.svg" alt="facebook logo"></a>
+
+    <div class="kontakt kontaktfooter">
+      <h3>KONTAKT</h3>
+      <p>Irma Pedersens Gade <br>
+        8000 Aarhus C, Denmark</p>
+      <div class="somecontainer">
+
+        <a href="#"><svg class="icon1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+            <style type="text/css">
+            </style>
+            <g>
+              <path id="Facebook__x28_alt_x29_" class="st0" d="M90,15c0-7.9-7.1-15-15-15H15C7.1,0,0,7.1,0,15v60c0,7.9,7.1,15,15,15h30V56H34
+    V41h11v-5.8C45,25.1,52.6,16,61.9,16H74v15H61.9c-1.3,0-2.9,1.6-2.9,4v6h15v15H59v34h16c7.9,0,15-7.1,15-15V15z" />
+            </g>
+          </svg></a>
+        <a href="#"><svg class="icon2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {}
+            </style>
+            <path class="st0" d="M437,0H75C33.6,0,0,33.6,0,75v362c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z
+     M257,390c-74.4,0-135-60.6-135-135s60.6-135,135-135s135,60.6,135,135S331.4,390,257,390z M407,150c-24.8,0-45-20.2-45-45
+    s20.2-45,45-45s45,20.2,45,45S431.8,150,407,150z" />
+            <path class="st0" d="M407,90c-8.3,0-15,6.7-15,15s6.7,15,15,15s15-6.7,15-15S415.3,90,407,90z" />
+            <path class="st0" d="M257,150c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S314.9,150,257,150z" />
+          </svg></a>
+      </div>
     </div>
-  </div>
 
-  <div class="kontakt">
-    <h3>KONTAKT</h3>
-    <p>Irma Pedersens Gade <br>
-      8000 Aarhus C, Denmark</p>
-    <div class="somecontainer2">
-      <a href="#"><img class="some" src="images/facebook.svg" alt="facebook logo"></a>
-      <a href="#"><img class="some" src="images/instagram.svg" alt="facebook logo"></a>
-    </div>
-  </div>
-
-</footer>
+  </footer>
 
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 
 
 
 </body>
+
 </html>
