@@ -482,45 +482,49 @@ footer>h4 {
   .webcontainer1 {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     height: 32%;
   }
 
-  .webcontainer1-img {
-    display: block;
-    width: 60%;
-  }
-
   .content-section1 {
-    width: 50%;
-    height: 50%;
+    width: 100%;
     background-color: white;
-    position: absolute;
-    right: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
     padding: 20px;
   }
 
-  .webcontainer-headline {
+  .webcontainer-h2 {
     width: 100%;
     text-align: center;
-    padding-bottom: 30px;
+    font-size: 30px;
+    padding: 30px;
+  }
+
+  .img-container1 {
+    width: 60%;
+  }
+
+  .webcontainer1-img {
+    width: 100%;
   }
 
   .aabningswrapper {
+    width: 40%;
     display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
   }
 
   .aabningstiderhavnebad {
-    width: 50%;
-    padding: 10px;
+    width: 100%;
+    padding: 0px 10px;
   }
 
   .aabningstidercafe {
-    width: 50%;
+    width: 100%;
     padding: 10px;
   }
 
@@ -547,21 +551,13 @@ footer>h4 {
     padding-bottom: 15px;
   }
 
-  /* STYLING TIL AKTIVITETER FORSIDE WEB */
+  /* STYLING TIL AKTIVITETER FORSIDE TABLET */
   .webcontainer2 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     background-color: var(--light-grey);
-  }
-
-  .webcontainer2-h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
   }
 
   .webcontainer2-content {
@@ -573,9 +569,10 @@ footer>h4 {
   .webcontainer2-section {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
+    height: auto;
   }
 
   .img-container2 {
@@ -584,65 +581,41 @@ footer>h4 {
 
   .flex-text1 {
     width: 40%;
-    padding: 30px;
+    padding: 20px;
     line-height: 1.5em;
     background-color: var(--white);
-    padding-bottom: 20px;
   }
 
   .flex-text1>h3 {
-    text-align: center;
     padding-bottom: 20px;
   }
 
+  .activities-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
   .activities-text1 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .activities-links {
-    width: 80%;
-    margin: 5px auto;
-    background-color: var(--white);
-    border: 1px solid var(--turquoise);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
+    width: 15%;
   }
 
-  .activities-links:hover {
-    background-color: var(--turquoise);
+  .link-logos-blue {
+    width: 100%;
+    padding: 5px;
   }
 
-  .activities-links>.facebook-letter-white-activities {
-    display: none;
-  }
-
-  .activities-links:hover>.facebook-letter-white-activities {
-    display: block;
-  }
-
-  .activities-links:hover>.facebook-letter-blue-activities {
+  .link-logos-white {
+    width: 15%;
+    padding: 5px;
     display: none;
   }
 
   .activities-links>a {
-    text-decoration: none;
-    color: var(--turquoise);
-    margin: 0 auto;
-  }
-
-  .activities-links:hover>a {
-    color: var(--white);
-  }
-
-  .facebook-letter-blue-activities {
-    width: 10%;
-    padding: 5px;
-  }
-
-  .facebook-letter-white-activities {
-    width: 10%;
-    padding: 5px;
+    display: none;
   }
 
   /* STYLING AF SPISESTEDER PÅ FORSIDE WEB */
@@ -654,13 +627,6 @@ footer>h4 {
     flex-wrap: wrap;
     margin: 0 auto;
     height: 100%;
-  }
-
-  .webcontainer3-h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
   }
 
   .flex-img {
@@ -713,7 +679,7 @@ footer>h4 {
 
   .flex-text3 {
     width: 100%;
-    height: 70%;
+    height: 65%;
     padding: 5px;
     display: flex;
     flex-flow: column nowrap;
@@ -854,6 +820,52 @@ footer>h4 {
 
   .flex-text3 {
     height: auto;
+  }
+
+  .activities-links {
+    width: 80%;
+    margin: 5px auto;
+    background-color: var(--white);
+    border: 1px solid var(--turquoise);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .activities-links:hover {
+    background-color: var(--turquoise);
+  }
+
+  .activities-links>.link-logos-white {
+    display: none;
+  }
+
+  .activities-links:hover>.link-logos-white {
+    display: block;
+  }
+
+  .activities-links:hover>.link-logos-blue {
+    display: none;
+  }
+
+  .activities-links>a {
+    text-decoration: none;
+    color: var(--turquoise);
+    margin: 0 auto;
+  }
+
+  .activities-links:hover>a {
+    color: var(--white);
+  }
+
+  .link-logos-blue {
+    width: 15%;
+    padding: 5px;
+  }
+
+  .link-logos-white {
+    width: 15%;
+    padding: 5px;
   }
 
   .activities-text2 {
