@@ -547,6 +547,7 @@ footer>h4 {
     padding-bottom: 15px;
   }
 
+  /* STYLING TIL AKTIVITETER FORSIDE WEB */
   .webcontainer2 {
     width: 100%;
     display: flex;
@@ -566,14 +567,82 @@ footer>h4 {
   .webcontainer2-content {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .webcontainer2-section {
     display: flex;
-    flex-direction: column;
-    width: 33%;
-    padding: 10px;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .img-container2 {
+    width: 60%;
+  }
+
+  .flex-text1 {
+    width: 40%;
+    padding: 30px;
+    line-height: 1.5em;
+    background-color: var(--white);
+    padding-bottom: 20px;
+  }
+
+  .flex-text1>h3 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .activities-text1 {
+    margin-bottom: 30px;
+  }
+
+  .activities-links {
+    width: 80%;
+    margin: 5px auto;
+    background-color: var(--white);
+    border: 1px solid var(--turquoise);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .activities-links:hover {
+    background-color: var(--turquoise);
+  }
+
+  .activities-links>.facebook-letter-white-activities {
+    display: none;
+  }
+
+  .activities-links:hover>.facebook-letter-white-activities {
+    display: block;
+  }
+
+  .activities-links:hover>.facebook-letter-blue-activities {
+    display: none;
+  }
+
+  .activities-links>a {
+    text-decoration: none;
+    color: var(--turquoise);
+    margin: 0 auto;
+  }
+
+  .activities-links:hover>a {
+    color: var(--white);
+  }
+
+  .facebook-letter-blue-activities {
+    width: 10%;
+    padding: 5px;
+  }
+
+  .facebook-letter-white-activities {
+    width: 10%;
+    padding: 5px;
   }
 
   /* STYLING AF SPISESTEDER PÅ FORSIDE WEB */
@@ -655,7 +724,7 @@ footer>h4 {
     text-align: center;
   }
 
-  .activities-text {
+  .activities-text2 {
     line-height: 1.5em;
     text-align: center;
   }
@@ -787,7 +856,7 @@ footer>h4 {
     height: auto;
   }
 
-  .activities-text {
+  .activities-text2 {
     padding-bottom: 25px;
   }
 
