@@ -563,11 +563,6 @@ footer>h4 {
     flex-direction: row;
   }
 
-  .content-images {
-    width: 100%;
-    height: 100%;
-  }
-
   .webcontainer2-section {
     display: flex;
     flex-direction: column;
@@ -593,9 +588,42 @@ footer>h4 {
     padding: 30px;
   }
 
+  .flex-img {
+    position: relative;
+    max-width: 400px;
+  }
+
+  .flex-img:hover .overlay {
+    opacity: 0.8;
+  }
+
   .content-images {
     width: 100%;
     height: auto;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: white;
+  }
+
+  .overlay-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
   }
 
   .webcontainer3-section {
