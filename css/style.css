@@ -261,7 +261,7 @@ p {
   padding-left: 15px;
 }
 
-#infokort-img {
+.infokort-img {
   margin-top: 15px;
 }
 
@@ -910,13 +910,13 @@ footer>h4 {
     width: 100%;
   }
 
-  #map-container {
+  .map-container {
     width: 100%;
     margin: 0 auto;
     bottom: 50px;
   }
 
-  #infokort-img {
+  .infokort-img {
     width: 100%;
     animation-name: fademap;
     animation-iteration-count: 1;
