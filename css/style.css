@@ -329,8 +329,9 @@ footer>h4 {
   color: var(--white);
 }
 
-.kontaktfooter>p {
+.kontaktfooter>a {
   color: var(--white);
+  text-decoration: none;
 }
 
 .timetable {
