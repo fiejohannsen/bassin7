@@ -744,26 +744,6 @@ footer>h4 {
     padding: 5px;
   }
 
-  /*
-  .line {
-    display: block;
-    position: relative;
-    width: 30px;
-    border: 1px solid var(--turquoise);
-    margin: 0 auto;
-    animation: 2s tryhard ease;
-  }
-
-  @keyframes tryhard {
-    0% {
-      width: 0;
-    }
-
-    100% {
-      width: 30px;
-    }
-  }
-*/
   /* STYLING AF FOOTER (TABLET) */
   footer {
     display: flex;
